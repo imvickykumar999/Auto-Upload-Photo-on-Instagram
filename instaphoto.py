@@ -17,11 +17,15 @@ def make_square(im, min_size=256, fill_color=(255, 255, 255, 0)):
     new_im.paste(im, (int((size - x) / 2), int((size - y) / 2)))
     return new_im
 
-from instabot import Bot
-bot = Bot()
+try:
+    from instabot import Bot
+except Exception as e:
+    print(e)
+    os.system('pip install instabot')
+    from instabot import Bot
 
-print('Photo should be SQUARE !!!')
-link = 'https://github.com/imvickykumar999/Auto-Upload-Photo-on-Instagram'
+bot = Bot()
+link = 'https://github.com/imvickykumar999/Auto-Upload-Photo-on-Instagram/blob/50d72ef367c31496a283f250dafa810c8f1e82c8/instaphoto.py#L51'
 
 user = input('Enter Username : ')
 passwd = input('Enter Password : ')
@@ -49,13 +53,23 @@ for file in os.listdir('toupload'):
         rgb_img.save(filepng)
 
         bot.upload_photo(filepng,
-        caption = filepng + f' has been upload using {link}')
+        caption = filepng + f'''
+
+        has been upload using
+
+        {link}''')
 
         if os.path.exists(filepng + '.REMOVE_ME'):
             os.remove(filepng + '.REMOVE_ME')
 
-        if os.path.exists(file0 + '.png'):
-            os.remove(file0 + '.png')
+        try:
+            if os.path.exists(file0 + '.png'):
+                os.remove(file0 + '.png')
+        except Exception as e:
+            print(f'''
+            
+            {e}
+            ''')
 
     except Exception as e:
         print(e)
