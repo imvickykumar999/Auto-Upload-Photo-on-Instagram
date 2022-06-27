@@ -77,7 +77,7 @@ def upload():
             print(e)
 
     try:
-        shutil.rmtree('toupload')
+        shutil.rmtree('config')
     except Exception as e:
         print(e)
 
