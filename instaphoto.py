@@ -77,7 +77,7 @@ def upload():
             print(e)
 
     try:
-        shutil.rmtree('config')
+        shutil.rmtree('toupload') # create file with new folder for every upload.
     except Exception as e:
         print(e)
 
