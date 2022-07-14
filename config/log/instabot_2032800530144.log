@@ -1,0 +1,5 @@
+2022-07-14 15:05:36,868 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2022-07-14 15:05:36,869 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\instabot\bot\bot.py
+2022-07-14 15:05:51,227 - instabot version: 0.117.0 (api_login) - INFO - Not yet logged in starting: PRE-LOGIN FLOW!
+2022-07-14 15:06:02,377 - instabot version: 0.117.0 (api) - WARNING - HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /api/v1/accounts/get_prefill_candidates/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001D94ECCD990>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2022-07-14 15:06:13,511 - instabot version: 0.117.0 (api) - WARNING - HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /api/v1/qe/sync/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001D94ECCCA30>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
