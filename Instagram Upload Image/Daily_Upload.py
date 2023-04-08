@@ -24,6 +24,10 @@ except:
 # https://platform.openai.com/account/api-keys
 API_Key = getpass.getpass('Enter API key : ')
 
+user = ['vix.bot', '_____.___alone___._____', 'imvickykumar999']
+passwd = getpass.getpass('Enter Instagram Password : ')
+# passwd = '************'
+
 # API_Key = '***********************************'
 openai.api_key = API_Key
 
@@ -46,10 +50,6 @@ for i in range(n):
     img = list(image_resp['data'][i].values())[0]
     r = requests.get(img, allow_redirects=True)
     open(f'images/{file}.jpg', 'wb').write(r.content)
-
-user = ['vix.bot', '_____.___alone___._____', 'imvickykumar999']
-passwd = getpass.getpass('Enter Instagram Password : ')
-# passwd = '************'
 
 bot = Bot()
 bot.login(username = user[0], password = passwd)
