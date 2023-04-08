@@ -53,5 +53,5 @@ how modules are imported within your program is awkward, this leads to the
 nesting being too deep and hitting Python's stack-limit.
 
 With the default recursion limit (1000), the recursion error occurs at about
-115 nested imported, with limit 2000 at about 240, with limit 5000 at about
+115 nested imported, with limit 2000 at about 240, with limit 5000 at about
 660.

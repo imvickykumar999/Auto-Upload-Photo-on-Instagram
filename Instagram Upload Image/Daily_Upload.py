@@ -21,12 +21,13 @@ try:
 except:
     pass
 
-# https://platform.openai.com/account/api-keys
-API_Key = getpass.getpass('Enter API key : ')
 
 user = ['vix.bot', '_____.___alone___._____', 'imvickykumar999']
 passwd = getpass.getpass('Enter Instagram Password : ')
 # passwd = '************'
+
+# https://platform.openai.com/account/api-keys
+API_Key = getpass.getpass('Enter API key : ')
 
 # API_Key = '***********************************'
 openai.api_key = API_Key
