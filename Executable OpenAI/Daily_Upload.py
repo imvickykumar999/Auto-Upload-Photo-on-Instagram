@@ -22,15 +22,17 @@ except:
     pass
 
 user = 'vix.bot'
-passwd = getpass.getpass('Enter Instagram Password : ')
+passwd = getpass.getpass('\nEnter Instagram Password : ')
 
 API_Key = getpass.getpass('Enter API key : ')
 openai.api_key = API_Key
 
+print('\nUploading ...')
 models = openai.Model.list()
+
 completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", 
                 messages=[{"role": "user", 
-                           "content": "Trending Video Games"}])
+                           "content": "Trending Minecraft Games"}])
 
 topics = completion.choices[0].message.content
 topic = random.choice(topics.split('\n')[2:-2]).split('. ')[1]
@@ -63,5 +65,5 @@ new_image = make_square(test_image)
 path = f'to_upload/{file}.jpg'
 new_image.save(path)
 
-cap = f'🔥 This is Trending Video-Game image of "{topic}", created by OpenAI API and uploaded at {file} (unix time) using InstaBot package written in Python Language. #imvickykumar999 💡' 
+cap = f'🔥 This is Trending Video-Game image of "{topic}", created by OpenAI API and uploaded at {file} (unix time) using InstaBot package written in Python Language. #imvickykumar999 @minecraft 💡' 
 bot.upload_photo(path, caption = cap)
