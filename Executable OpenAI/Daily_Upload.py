@@ -21,7 +21,7 @@ try:
 except:
     pass
 
-user = ['vix.bot', '_____.___alone___._____', 'imvickykumar999']
+user = 'vix.bot'
 passwd = getpass.getpass('Enter Instagram Password : ')
 
 API_Key = getpass.getpass('Enter API key : ')
@@ -45,7 +45,7 @@ for i in range(n):
     open(f'images/{file}.jpg', 'wb').write(r.content)
 
 bot = Bot()
-bot.login(username = user[0], password = passwd)
+bot.login(username = user, password = passwd)
 
 def make_square(im, min_size=256, fill_color=(255,255,255,0)):
     x, y = im.size
@@ -63,5 +63,5 @@ new_image = make_square(test_image)
 path = f'to_upload/{file}.jpg'
 new_image.save(path)
 
-cap = f'🔥 This is Trending Video-Game image of "{topic}", created by OpenAI API and uploaded at {file} (unix time) using InstaBot package written in Python Language 💡' 
+cap = f'🔥 This is Trending Video-Game image of "{topic}", created by OpenAI API and uploaded at {file} (unix time) using InstaBot package written in Python Language. #imvickykumar999 💡' 
 bot.upload_photo(path, caption = cap)
