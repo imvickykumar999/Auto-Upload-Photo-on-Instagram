@@ -1,0 +1,5 @@
+Flask
+openai==0.28
+requests
+instabot
+Pillow
