@@ -1,5 +1,6 @@
-# [Auto-Upload-Photo-on-Instagram](https://www.instagram.com/oye.vicks/)
+# `Auto Upload Photo on` [`Instagram`](https://www.instagram.com/vix.bot/)
 ---------------------------------------
+
 ## >>> Instabot library is used.
 
 ![image](https://user-images.githubusercontent.com/50515418/129475280-4b56ad63-6257-4205-b689-277cf9e20b6a.png)
